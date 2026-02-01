@@ -1,0 +1,158 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API_SiniestroVial",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/siniestros": {
+      "post": {
+        "tags": [
+          "Siniestros"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarSiniestroCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarSiniestroCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarSiniestroCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          }
+        }
+      }
+    },
+    "/api/siniestros/ConsultaSiniestros": {
+      "get": {
+        "tags": [
+          "Siniestros"
+        ],
+        "parameters": [
+          {
+            "name": "Departamento",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FechaInicio",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "FechaFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "Page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "PageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "RegistrarSiniestroCommand": {
+        "type": "object",
+        "properties": {
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "departamento": {
+            "type": "string",
+            "nullable": true
+          },
+          "ciudad": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipo": {
+            "$ref": "#/components/schemas/TipoSiniestro"
+          },
+          "numeroVictimas": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehiculos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VehiculoDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TipoSiniestro": {
+        "enum": [
+          1,
+          2,
+          3,
+          4,
+          99
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "VehiculoDto": {
+        "type": "object",
+        "properties": {
+          "tipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "placa": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

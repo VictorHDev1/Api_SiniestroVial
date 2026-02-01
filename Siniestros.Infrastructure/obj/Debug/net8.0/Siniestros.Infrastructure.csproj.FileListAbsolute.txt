@@ -1,0 +1,17 @@
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Infrastructure.deps.json
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Infrastructure.dll
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Infrastructure.pdb
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Application.dll
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Domain.dll
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Application.pdb
+C:\API_SiniestroVial\Siniestros.Infrastructure\bin\Debug\net8.0\Siniestros.Domain.pdb
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.csproj.AssemblyReference.cache
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.AssemblyInfoInputs.cache
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.AssemblyInfo.cs
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.csproj.CoreCompileInputs.cache
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestr.64E146DA.Up2Date
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.dll
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\refint\Siniestros.Infrastructure.dll
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\Siniestros.Infrastructure.pdb
+C:\API_SiniestroVial\Siniestros.Infrastructure\obj\Debug\net8.0\ref\Siniestros.Infrastructure.dll

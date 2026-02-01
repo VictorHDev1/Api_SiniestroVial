@@ -1,0 +1,60 @@
+[
+  {
+    "ContainingType": "API_SiniestroVial.Controllers.SiniestrosController",
+    "Method": "Crear",
+    "RelativePath": "api/siniestros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Siniestros.Application.Commands.RegistrarSiniestro.RegistrarSiniestroCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "API_SiniestroVial.Controllers.SiniestrosController",
+    "Method": "Consultar",
+    "RelativePath": "api/siniestros/ConsultaSiniestros",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Departamento",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaInicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
